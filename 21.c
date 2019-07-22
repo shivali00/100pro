@@ -15,7 +15,7 @@ while(l<=h)
 {
 m=(l+h)/2;
 if(a[m]==s) {printf("Element %d found at position %d",a[m],m+1);return 0;}
-if(a[m]>s)l=m+1;
+if(a[m]<s)l=m+1;
 else h=m-1;
 }
 printf("Element doesnt exists in the list");
